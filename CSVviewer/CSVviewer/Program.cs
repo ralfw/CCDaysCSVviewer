@@ -17,8 +17,10 @@ namespace CSVviewer
             var kmdz = new KommandozeileAdapter();
             var textd = new TextdateiAdapter();
             var blt = new Blättern();
+            var tab = new Tabellensatz();
             var ui = new UI();
-            var app = new Applikation(kmdz, textd, blt, ui);
+
+            var app = new Applikation(kmdz, textd, blt, tab, ui);
 
             // run
             app.Start();
